@@ -66,6 +66,7 @@
                                             <th>Name</th>
                                             <th>Category</th>
                                             <th>Price</th>
+                                            <th>Photo</th>
                                             <th>Stock</th>
                                             <th>Created At</th>
                                             <th>Action</th>
@@ -77,6 +78,16 @@
                                                 <td>{{ $product->category }}
                                                 </td>
                                                 <td>{{ $product->price }}
+                                                </td>
+                                                <td>
+                                                    @if ($product->image)
+                                                        <img src="{{ asset('storage/products/' . $product->image) }}"
+                                                            alt="" width="100px" class="img-thumbnail">
+                                                    @else
+                                                        <span class="badge badge-danger">No Image</span>
+                                                    @endif
+                                                    <img src="{{ asset('storage/' . $product->image) }}" alt=""
+                                                        width="100px">
                                                 </td>
                                                 <td>{{ $product->stock }}
                                                 </td>
