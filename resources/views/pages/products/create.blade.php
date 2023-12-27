@@ -44,7 +44,7 @@
                                     name="name">
                                 @error('name')
                                     <div class ="invalid-feedback">
-                                        {{ message }}
+                                        {{ $message }}
                                     </div>
                                 @enderror
                             </div>
@@ -57,7 +57,7 @@
                                     name="price">
                                 @error('price')
                                     <div class ="invalid-feedback">
-                                        {{ message }}
+                                        {{ $message }}
                                     </div>
                                 @enderror
                             </div>
@@ -70,7 +70,7 @@
                                     name="stock">
                                 @error('stock')
                                     <div class ="invalid-feedback">
-                                        {{ message }}
+                                        {{ $message }}
                                     </div>
                                 @enderror
                             </div>

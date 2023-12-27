@@ -45,7 +45,7 @@
                                     name="name" value="{{ $product->name }}">
                                 @error('name')
                                     <div class ="invalid-feedback">
-                                        {{ message }}
+                                        {{ $message }}
                                     </div>
                                 @enderror
                             </div>
@@ -58,7 +58,7 @@
                                     name="price" value="{{ $product->price }}">
                                 @error('price')
                                     <div class ="invalid-feedback">
-                                        {{ message }}
+                                        {{ $message }}
                                     </div>
                                 @enderror
                             </div>
@@ -71,7 +71,7 @@
                                     name="stock" value="{{ $product->stock }}">
                                 @error('stock')
                                     <div class ="invalid-feedback">
-                                        {{ message }}
+                                        {{ $message }}
                                     </div>
                                 @enderror
                             </div>

@@ -45,7 +45,7 @@
                                     name="name" value="{{ $user->name }}">
                                 @error('name')
                                     <div class ="invalid-feedback">
-                                        {{ message }}
+                                        {{ $message }}
                                     </div>
                                 @enderror
                             </div>
@@ -58,7 +58,7 @@
                                     name="email" value="{{ $user->email }}">
                                 @error('email')
                                     <div class ="invalid-feedback">
-                                        {{ message }}
+                                        {{ $message }}
                                     </div>
                                 @enderror
                             </div>
@@ -78,7 +78,7 @@
                                 </div>
                                 @error('password')
                                     <div class ="invalid-feedback">
-                                        {{ message }}
+                                        {{ $message }}
                                     </div>
                                 @enderror
                             </div>
